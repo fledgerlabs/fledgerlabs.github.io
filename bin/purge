@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-curl -X DELETE "https://api.cloudflare.com/client/v4/zones/cb96e3e92eb5bdabcf1dc3972b0e661e/purge_cache" \
+curl -X DELETE "https://api.cloudflare.com/client/v4/zones/${CLOUDFLARE_ZONEID}/purge_cache" \
      -H "X-Auth-Email: ${CLOUDFLARE_EMAIL}" \
      -H "X-Auth-Key: ${CLOUDFLARE_KEY}" \
      -H "Content-Type: application/json" \
