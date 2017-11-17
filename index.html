@@ -3,17 +3,29 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
-    <title>Fledger Labs</title>
+    <title>Fledger Labs |
+      App Developer, iOS Developer, Android Developer,
+      Mobile Developer, SaaS Developer, Web Design,
+      Mobile Design, Logo Design, Brand Design,
+      Brand Messaging, DevOps Consultant</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="apple-touch-icon" href="pages/ico/60.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/new_images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/new_images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/new_images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/new_images/favicons/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta content="" name="description" />
+    <meta name="description" content = "Fledger Labs helps your fledgling software ideas take flight. Have a great idea? Click here!"/>
+    <meta name="keywords" content = "Fledger, fledgerlabs, fledger labs, fledgerlabsio, fledgerlabs.io,web development company, web development and design, web design, web development expert, web development experts, software solutions, web developer, web consultant, web app developer, web application developer, mobile app developer, mobile games developer, best developer, hire developers, software contractor, web design contractor, build website, hire, developer, get a website designed, add features to website, troubleshoot, buy website, build a website, redesign website "/>
+   <!-- <meta property="og:url"                content="http://fledgerlabs.io" />-->
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Fledger Labs" />
+    <meta property="og:description"        content="Fledger Labs helps your fledgling software ideas take flight. Have a great idea? Click here!" />
+    <meta property="og:image"              content="https://fledgerlabs.io/assets/new_images/full_logo.jpg" />
+
     <meta content="" name="author" />
     <!-- BEGIN PLUGINS -->
     <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
@@ -25,21 +37,46 @@
     <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
     <link class="main-stylesheet" href="pages/css/pages-icons.css" rel="stylesheet" type="text/css" />
     <!-- BEGIN PAGES CSS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109325204-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109325204-1');
+    </script>
   </head>
   <body class="pace-black">
+  <style>
+    @media(max-width: 767px){
+
+      .p-b-20 {
+        width:400px;
+        margin-right:0px;
+      }
+    }
+    @media(min-width: 767px){
+      .m-t-50 {
+      margin-top: -60px;
+    }
+    .p-b-20 {
+      padding-bottom: 60px!important;
+    }
+    }
+  </style>
     <section class="container relative">
       <div class="top-left z-index-10">
-        <div class="bg-white p-l-20 p-r-20 p-t-20 p-b-20">
-          <img src="assets/images/logo_b.png" data-src-retina="assets/images/logo_b_2x.png" class="" alt="" width="17" height="20">
-        </div>
+        <!-- <div class="p-l-10 p-r-10 p-t-10 p-b-10">
+          <img src="assets/new_images/logo_b.png" data-src-retina="assets/new_images/logo_b_2x.png" class="" alt="" width="50" height="50">
+
+        </div> -->
       </div>
     </section>
     <!-- BEGIN JUMBOTRON -->
     <!-- BEGIN HEADER -->
-    <nav class="header bottom bg-header light-solid" data-pages="header" data-pages-autofixed="true">
-      <!-- BEGIN WHITE BRUSH STROKE -->
+    <nav class="header bottom bg-header light-solid md-header" data-pages="header" data-pages-autofixed="true" data-pages-header="autoresize" data-pages-resize-class="dark">
       <div class="demo-brush bottom-left" data-pages-bg-image="assets/images/brush_stroke.png"></div>
-      <!-- END WHITE BRUSH STROKE -->
+
       <div class="container relative">
         <!-- BEGIN LEFT CONTENT -->
         <div class="pull-left">
@@ -48,7 +85,10 @@
                  -->
           <div class="header-inner">
             <!-- BEGIN LOGO -->
-            <img src="assets/images/logo_b.png" data-src-retina="assets/images/logo_b_2x.png" class="" alt="" width="17" height="20">
+            <a href="index.html">
+              <img src="assets/new_images/logo_b.png" data-src-retina="assets/new_images/logo_b_2x.png" class="" alt="" width="50" height="50">
+              <img src="assets/new_images/logo-name.png" data-src-retina="assets/new_images/logo-name.png" class="" alt="" height="20">
+            </a>
           </div>
         </div>
         <div class="pull-right">
@@ -80,14 +120,9 @@
                 <a href="portfolio.html" data-text="Portofolio">Portofolio</a>
               </li>
               <li>
-                <a href="mailto:contact@flederlabs.io" data-text="Contact Us">Contact Us</a>
+                <a href="contact.html" data-text="Contact Us">Contact Us</a>
               </li>
             </ul>
-            <!-- BEGIN COPYRIGHT FOR MOBILE -->
-            <div class="font-arial m-l-35 m-r-35 m-b-20 m-t-20 visible-sm visible-xs">
-              <p class="fs-11 small-text muted">Copyright &copy; 2017 Fledger Labs, LLC</p>
-            </div>
-            <!-- END COPYRIGHT FOR MOBILE -->
           </div>
           <!-- END MENU ITEMS -->
         </div>
@@ -104,7 +139,7 @@
               <!-- BEGIN IMAGE PARRALAX -->
               <div class="slider-wrapper">
                 <div class="image" data-swiper-parallax="30%">
-                  <div data-pages-bg-image="assets/new_images/hero8.jpg" data-bg-overlay-class="bg-white" class="full-height"></div>
+                  <div data-pages-bg-image="assets/new_images/hero7.jpeg" data-bg-overlay-class="bg-white" class="full-height"></div>
                 </div>
               </div>
               <!-- END IMAGE PARRALAX -->
@@ -143,8 +178,8 @@
             <h1 class="m-t-5 light">
             </h1>
             <p class="m-t-20">
-              We help companies bring software ideas to life. From concept to design,
-              development, deployment, and maintenance, let the experts at Fledger Labs guide you
+              We help companies bring fledgling software ideas to life. From concept to design,
+              to development, deployment, and maintenance, let our experts guide you
               on your journey.
             </p>
           </div>
@@ -163,14 +198,16 @@
     </section>
     <!-- END INTRO CONTENT -->
     <!-- BEGIN CONTENT SECTION -->
-    <section class="bg-white relative full-width p-t-100 p-b-100 bg-position-top-center bg-size-reset xs-bg-size-cover" data-pages="parallax" data-pages-bg-image="assets/images/mount_phone.jpg">
-      <div class="container m-t-50">
-        <div class="md-p-l-20 md-p-r-20 m-b-20 xs-no-padding">
+    <section class="bg-white relative full-width p-t-100 p-b-100 bg-position-top-center bg-size-reset xs-bg-size-cover" data-pages="parallax" data-pages-bg-image="assets/images/mount_phone2.jpg">
+      <div class="container m-t-50 p-b-20" >
+        <div class="md-p-l-20 md-p-r-20 xs-no-padding">
           <div class="row p-t-85">
             <div class="col-sm-7 ">
             </div>
-            <div class=" col-sm-5 col-md-4 sm-text-right">
-              <h5 class="block-title hint-text no-margin">You have the vision; we have the know-how. </h5>
+            <div class="p-t-75 col-sm-5 col-md-4 sm-text-right">
+              <h5 style="" class="block-title hint-text">
+                You have the vision; we have the <nobr>know-how</nobr>.
+              </h5>
               <h3 class="m-t-5">Turn your ideas into
                 profitable web, mobile, and SaaS products.
               </h3>
@@ -181,7 +218,7 @@
     </section>
     <!-- END CONTENT SECTION -->
     <!-- BEGIN CONTENT SECTION -->
-    <section class="bg-white relative p-b-85 p-t-75 p-b-65 p-t-55">
+    <section class="bg-white relative p-b-85 p-b-65">
       <div class="container">
         <div class="md-p-l-20 xs-no-padding clearfix">
           <div class="col-sm-3 no-padding">
@@ -189,7 +226,7 @@
               <img alt="" class="m-b-20" src="assets/new_images/idea.png">
               <h6 class="block-title p-b-5">Strategy <i class="pg-arrow_right m-l-10"></i></h6>
               <p class="m-b-30">You have a great idea, but how do you make it a reality? Let our industry
-              experts develop a customized strategy to get your app idea off the ground.</p>
+              experts develop a customized strategy to get your app idea off the ground, and into the hands of users.</p>
             </div>
             <div class="visible-xs b-b b-grey-light m-t-30 m-b-30"></div>
           </div>
@@ -198,7 +235,7 @@
               <img alt="" class="m-b-20" src="assets/new_images/set-square.png">
               <h6 class="block-title p-b-5">Design<i class="pg-arrow_right m-l-10"></i></h6>
               <p class="m-b-30">Our designers and developers work collaboratively to deliver
-                elegant user experiences that are both intuitive and powerful.
+                elegant user experiences that are both intuitive and powerful, while remaining meticulously coherent with your brand.
               </p>
             </div>
             <div class="visible-xs b-b b-grey-light m-t-30 m-b-30"></div>
@@ -215,8 +252,8 @@
           <div class="col-sm-3 no-padding">
             <div class="p-r-40 md-p-r-30  xs-no-padding text-center">
               <img alt="" class="m-b-20" src="assets/new_images/startup.png">
-              <h6 class="block-title p-b-5">Deployment and Maintenance<i class="pg-arrow_right m-l-10"></i></h6>
-              <p class="m-b-30">Our cutting-edge process ensures that product launches go smoothly.
+              <h6 class="block-title p-b-5">Deployment<i class="pg-arrow_right m-l-10"></i></h6>
+              <p class="m-b-30">Our cutting-edge processes, firmly rooted in Agile and DevOps principles, ensure that product launches go smoothly.
                 Our ongoing support provides you with peace of mind.
               </p>
             </div>
@@ -226,17 +263,20 @@
     </section>
     <!-- END CONTENT SECTION -->
     <!-- BEGIN CONTENT SECTION -->
-    <section class="p-t-75 "
+    <section class="p-t-75 bg-master-dark">
+    <!-- <section class="p-t-75 "
     style="background-image:
     linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ), url(assets/new_images/were-open3.jpg); background-size: cover; position: relative;">
+    ), url(assets/new_images/bird.png); background-size: cover; position: relative;"> -->
       <div class="container text-center">
         <h2 class="light text-white">
           Ready to get started?
         </h2>
-        <a class="btn btn-bordered m-t-15 m-b-100" href="mailto:contact@fledgerlabs.io">Contact Us</a>
+        <a class="btn btn-bordered m-t-15 m-b-100" href="contact.html">CONTACT US</a>
+        <a class="btn btn-bordered m-t-15 m-b-100" href="info.html">REQUEST INFO</a>
+
         <!-- <img src="assets/images/laptop_screen.png" class="image-responsive-height m-t-40 lazy" data-papes="float"> -->
       </div>
     </section>
@@ -245,19 +285,19 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <img src="assets/images/logo_black.png" width="152" height="21" data-src-retina="assets/images/logo_black_2x.png" class="logo inline m-r-50" alt="">
+            <!-- <img src="assets/new_images/logo-name-2x.png" width="152" height="27" data-src-retina="assets/images/logo_black_2x.png" class="logo inline m-r-50" alt=""> -->
             <div class="m-t-10 ">
               <ul class="no-style fs-11 no-padding font-arial">
                 <li class="inline no-padding"><a href="index.html" class=" text-master p-r-10 b-r b-grey">Home</a></li>
                 <li class="inline no-padding"><a href="portfolio.html" class="hint-text text-master p-l-10 p-r-10 b-r b-grey">Portfolio</a></li>
                 <!-- <li class="inline no-padding"><a href="#" class="hint-text text-master p-l-10 p-r-10 b-r b-grey">Contact Us</a></li> -->
-                <li class="inline no-padding"><a href="mailto:contact@fledgerlabs.io" class="hint-text text-master p-l-10 p-r-10 xs-no-padding xs-m-t-10">Contact Us</a></li>
+                <li class="inline no-padding"><a href="contact.html" class="hint-text text-master p-l-10 p-r-10">Contact Us</a></li>
               </ul>
             </div>
           </div>
           <div class="col-sm-6 text-right font-arial sm-text-left">
             </p>
-            <p class="fs-11 muted">Copyright &copy; 2017 Fledger Labs, LLC. All Rights Reserved.</p>
+            <p class="fs-11 muted">&copy; 2017 Fledger Labs, LLC. All Rights Reserved.</p>
           </div>
         </div>
       </div>
@@ -275,10 +315,25 @@
     <script type="text/javascript" src="assets/plugins/text-rotate/jquery.simple-text-rotator.min.js"></script>
     <!-- END VENDOR JS -->
     <!-- BEGIN PAGES FRONTEND LIB -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <script type="text/javascript" src="pages/js/pages.frontend.js"></script>
     <!-- END PAGES LIB -->
     <!-- BEGIN YOUR CUSTOM JS -->
     <script type="text/javascript" src="assets/js/custom.js"></script>
     <!-- END PAGES LIB -->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5a029087bb0c3f433d4c7d30/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
   </body>
 </html>

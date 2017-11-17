@@ -283,8 +283,9 @@
     };
     Header.prototype.addMinimized = function() {
         if (this.options.autoresize && !this.$element.hasClass('affix-top'))
-            if (!this.$element.hasClass(this.options.minimizedClass))
+            if (!this.$element.hasClass(this.options.minimizedClass)) {
                 this.$element.addClass(this.options.minimizedClass);
+        }
     };
     Header.prototype.removeMinized = function() {
         if (this.options.autoresize || this.$element.hasClass('affix-top'))
@@ -380,18 +381,43 @@
 
     });
     $(window).on("resize", function() {
-        $('[data-pages="header"]').header('updateAffix');
+        //$('[data-pages="header"]').header('updateAffix');
     })
+
     $(window).on("scroll", function() {
         var ScrollTop = parseInt($(window).scrollTop());
-        if (ScrollTop > 1) {
-            $('[data-pages="header"]').header('addMinimized');
-        } else {
-            if (ScrollTop < 10) {
+        if (ScrollTop <= 1) {
+            if(ScrollTop >=10)
                 $('[data-pages="header"]').header('removeMinized');
-            }
         }
     });
+    try {
+        if ($('.jumbotron.full-vh').length > 0) {
+
+
+            $('body').waypoint(function (direction) {
+                    if (direction == 'down')
+                        $('[data-pages="header"]').header('addMinimized');
+                    if (direction == 'up')
+                        $('[data-pages="header"]').header('removeMinized');
+                }, {
+                    offset: -1 * ($('.jumbotron.full-vh').height() + 10)
+                }
+            );
+        }
+        else{
+            $(window).on("scroll", function() {
+                var ScrollTop = parseInt($(window).scrollTop());
+                if (ScrollTop <= 1) {
+                        $('[data-pages="header"]').header('removeMinized');
+                }
+                else
+                        $('[data-pages="header"]').header('addMinimized');
+            });
+        }
+    }
+    catch(e){}
+
 
 })(window.jQuery);
 

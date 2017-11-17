@@ -5,16 +5,20 @@
     <meta charset="utf-8" />
     <title>Portfolio - Fledger Labs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="apple-touch-icon" href="pages/ico/60.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/new_images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/new_images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/new_images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/new_images/favicons/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta content="" name="description" />
+    <meta name="description" content = "Fledger Labs helps your fledgling software ideas take flight. Have a great idea? Click here!"/>
+    <meta name="keywords" content = "portfolio, web development company portfolio, Fledger, fledgerlabs portfolio, fledger labs, fledgerlabsio, fledgerlabs.io,web development company, web development and design, web design, web development expert, web development experts, software solutions, web developer, web consultant, web app developer, web application developer, mobile app developer, mobile games developer, best developer, hire developers, software contractor, web design contractor, build website, hire, developer, get a website designed, add features to website, troubleshoot, buy website, build a website, redesign website "/>
+
     <meta content="" name="author" />
+    <meta name="og:url" content="https://fledgerlabs.io/index.html"/>
     <!-- BEGIN PLUGINS -->
     <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -25,8 +29,45 @@
     <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
     <link class="main-stylesheet" href="pages/css/pages-icons.css" rel="stylesheet" type="text/css" />
     <!-- BEGIN PAGES CSS -->
+    <style>
+      .ar-2-1 > div {
+        background-size: contain;
+        background-position: center;
+      }
+      .carousel-inner>.item>a>img, .carousel-inner>.item>img {
+        width: 100%; height:100%;
+      }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109325204-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109325204-1');
+    </script>
   </head>
   <body class="pace-black">
+  <style>
+
+    .hover-zoom .inner{z-index: 2;}
+    .carousel-overlay-black
+    {position:absolute;
+      top:0px;
+      left:0px;
+      height:100%;
+      width:100%;
+      background-color:black;
+      opacity:0.6;
+      transition: opacity 0.3s;
+      -webkit-transition: opacity 0.3s;
+      -moz-transition: opacity 0.3s;
+    }
+
+    .carousel-overlay-black:hover{
+      opacity:0.3;
+    }
+  </style>
     <!-- BEGIN HEADER -->
     <nav class="header md-header light-solid" data-pages="header" data-pages-header="autoresize" data-pages-resize-class="dark">
       <div class="container relative">
@@ -37,7 +78,10 @@
                  -->
           <div class="header-inner">
             <!-- BEGIN LOGO -->
-            <img src="assets/images/logo_b.png" data-src-retina="assets/images/logo_b_2x.png" class="" alt="" width="17" height="20">
+            <a href="index.html">
+              <img src="assets/new_images/logo_b.png" data-src-retina="assets/new_images/logo_b_2x.png" class="" alt="" width="50" height="50">
+              <img src="assets/new_images/logo-name.png" data-src-retina="assets/new_images/logo-name-2x.png" class="" alt="" height="20">
+            </a>
           </div>
         </div>
         <div class="pull-right">
@@ -68,14 +112,9 @@
                 <a href="portfolio.html" data-text="Portofolio" class="active">Portofolio</a>
               </li>
               <li>
-                <a href="mailto:contact@fledgerlabs.io" data-text="Contact Us">Contact Us</a>
+                <a href="contact.html" data-text="Contact Us">Contact Us</a>
               </li>
             </ul>
-            <!-- BEGIN COPYRIGHT FOR MOBILE -->
-            <div class="font-arial m-l-35 m-r-35 m-b-20 m-t-20 visible-sm visible-xs">
-              <p class="fs-11 small-text muted">Copyright &copy; 2017 Fledger Labs, LLC</p>
-            </div>
-            <!-- END COPYRIGHT FOR MOBILE -->
           </div>
           <!-- END MENU ITEMS -->
         </div>
@@ -87,139 +126,624 @@
       <section class="p-b-40 p-t-55">
         <div class="container">
           <div class="m-b-30">
-            <h1 class="text-center ">Your in good hands.</h1>
+            <h1 class="text-center ">Featured Projects</h1>
             <div class="b-b b-grey m-t-30"></div>
-            <div class="col-md-9 col-md-offset-3 col-sm-8 col-sm-offset-2 p-t-15 p-b-15">
-              <ul class="no-style no-margin">
-                <li class="m-r-20 m-l-20 inline sm-block text-center sm-p-b-5 sm-m-b-5 b-grey sm-b-b">
-                  <a href="#" class="link active text-black fs-13 block-title ">Logos</a>
-                </li>
-                <li class="m-r-20 m-l-20 inline sm-block text-center sm-p-b-5 sm-m-b-5 b-grey sm-b-b">
-                  <a href="#" class="link active text-black fs-13 block-title">Advertising</a>
-                </li>
-                <li class="m-r-20 m-l-20 inline sm-block text-center sm-p-b-5 sm-m-b-5 b-grey sm-b-b">
-                  <a href="#" class="link active text-black fs-13 block-title">Art</a>
-                </li>
-                <li class="m-r-20 m-l-20 inline sm-block text-center sm-p-b-5 sm-m-b-5 b-grey sm-b-b">
-                  <a href="#" class="link active text-black fs-13 block-title">Law</a>
-                </li>
-                <li class="m-r-20 m-l-20 inline sm-block text-center ">
-                  <a href="#" class="link active text-black fs-13 block-title">Constructions</a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
         <div class="gallery">
-          <div class="grid-sizer col-sm-3 col-xs-6 no-padding"></div>
-          <!-- START GALLERY ITEM -->
+          <div class="grid-sizer col-sm-6 col-xs-12 no-padding"></div>
+
           <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
-            <div class="inner bottom-left bottom-right padding-30">
-              <h5 class="block-title text-white no-margin">IGNITEAT</h5>
-              <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-              <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
+
+            <a href = "https://bitfusion.io/products/bitfusion-flex/">
+            <div class="inner bottom-left bottom-right padding-30 " style="z-index:2">
+              <h5 class="block-title text-white no-margin ">Bitfusion Flex</h5>
+              <p class="font-arial fs-14 text-white muted m-t-5 m-b-0 ">SaaS, PaaS</p>
             </div>
             <div class="ar-2-1">
-              <div data-pages-bg-image="assets/images/gallery_1.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
-              </div>
-            </div>
-          </div>
-          <!-- END GALLERY ITEM -->
-          <!-- START GALLERY ITEM -->
-          <div class="gallery-item col-sm-3 col-xs-6 no-padding hover-zoom">
-            <div class="inner bottom-left bottom-right padding-30">
-              <h5 class="block-title text-white no-margin">IGNITEAT</h5>
-              <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-              <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
-            </div>
-            <div class="ar-1-1">
               <!-- START PREVIEW -->
-              <div data-pages-bg-image="assets/images/gallery_2.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
+              <div class="carousel-overlay-black z-index-1"></div>
+              <div class="carousel slide" data-interval="1500">
+
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img class="d-block w-100" src="assets/new_images/portfolioimg/bitfusion_flex/logo.jpg" alt="First slide">
+                  </div>
+                  <div class="item">
+                    <img class="d-block w-100" src="assets/new_images/portfolioimg/bitfusion_flex/Advanced-Cluster-Management.jpg" alt="Second slide">
+                  </div>
+                  <div class="item">
+                    <img class="d-block w-100" src="assets/new_images/portfolioimg/bitfusion_flex/Job-Runner-image.jpg" alt="Third slide">
+                  </div>
+                  <div class="item">
+                    <img class="d-block w-100" src="assets/new_images/portfolioimg/bitfusion_flex/Resource-Management-Image.jpg" alt="Third slide">
+                  </div>
+                </div>
               </div>
-              <!-- END PREVIEW -->
-            </div>
-          </div>
-          <!-- END GALLERY ITEM -->
-          <div class="gallery-item col-sm-3 col-xs-6 no-padding hover-zoom">
-            <div class="inner bottom-left bottom-right padding-30">
-              <h5 class="block-title text-white no-margin">IGNITEAT</h5>
-              <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-              <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
-            </div>
-            <div class="ar-1-1">
-              <!-- START PREVIEW -->
-              <div data-pages-bg-image="assets/images/gallery_6.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
+             <!--<div data-pages-bg-image="" data-bg-overlay="black" data-overlay-opacity="0.6">
               </div>
-              <!-- END PREVIEW -->
-            </div>
+              END PREVIEW --->
           </div>
-          <div class="gallery-item col-sm-3 col-xs-6 no-padding hover-zoom">
-            <div class="inner bottom-left bottom-right padding-30">
-              <h5 class="block-title text-white no-margin">IGNITEAT</h5>
-              <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-              <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
-            </div>
-            <div class="ar-1-1">
-              <!-- START PREVIEW -->
-              <div data-pages-bg-image="assets/images/gallery_4.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
-              </div>
-              <!-- END PREVIEW -->
-            </div>
+            </a>
           </div>
-          <div class="gallery-item col-sm-3 col-xs-6 no-padding hover-zoom">
-            <div class="inner bottom-left bottom-right padding-30">
-              <h5 class="block-title text-white no-margin">IGNITEAT</h5>
-              <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-              <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
-            </div>
-            <div class="ar-1-1">
-              <!-- START PREVIEW -->
-              <div data-pages-bg-image="assets/images/gallery_3.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
-              </div>
-              <!-- END PREVIEW -->
-            </div>
-          </div>
+
+
           <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
-            <div class="inner bottom-left bottom-right padding-30">
-              <h5 class="block-title text-white no-margin">IGNITEAT</h5>
-              <h6 class="block-title fs-11 hint-text text-white m-t-5 m-b-0">03 Nov 2015</h6>
-              <p class="font-arial fs-11 text-white muted m-t-5 m-b-0">Logo design, Web Design and Branding</p>
+            <a href="https://bitfusion.io/">
+            <div class="inner bottom-left bottom-right padding-30 z-index-2">
+              <h5 class="block-title text-white no-margin">Bitfusion Boost</h5>
+              <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">SaaS, PaaS</p>
             </div>
             <div class="ar-2-1">
-              <div data-pages-bg-image="assets/images/gallery_5.jpg" data-bg-overlay="black" data-overlay-opacity="0.4">
+              <div class="carousel-overlay-black z-index-1"></div>
+
+
+              <div class="carousel slide" data-interval="1500">
+
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img class="d-block w-100 " src="assets/new_images/portfolioimg/bitfusion_boost/logo.jpg" alt="First slide">
+                  </div>
+                  <div class="item ">
+                    <img class="d-block w-100" style="background-color: white;" src="assets/new_images/portfolioimg/bitfusion_boost/screenshot2.jpg" alt="Second slide">
+                  </div>
+                </div>
+
               </div>
             </div>
+            </a>
           </div>
-          <!-- END GALLERY ITEM -->
-        </div>
+
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href = "https://bitfusion.io/">
+            <div class="inner bottom-left bottom-right padding-30 z-index-2">
+              <h5 class="block-title text-white no-margin">Bitfusion.io</h5>
+              <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Web</p>
+            </div>
+            <div class="ar-2-1">
+              <div class="carousel-overlay-black z-index-1"></div>
+              <!-- START PREVIEW -->
+              <!--<div data-pages-bg-image="assets/new_images/portfolioimg/bitfusion.io/logo.svg" data-bg-overlay="black" data-overlay-opacity="0.6">
+              </div> -->
+
+
+              <div class="carousel slide" data-interval="1500">
+
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img class="d-block w-100  p-b-50" style="padding-top: 7%;" src="assets/new_images/portfolioimg/bitfusion.io/logo.svg" alt="First slide">
+                  </div>
+                  <div class="item">
+                    <img class="d-block w-100" src="assets/new_images/portfolioimg/bitfusion.io/desktop.jpg" alt="Third slide">
+                  </div>
+                </div>
+              </div>
+                <!-- END PREVIEW -->
+            </div>
+            </a>
+          </div>
+
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="http://nashvillez.org/">
+            <div class="inner bottom-left bottom-right padding-30 z-index-2">
+              <h5 class="block-title text-white no-margin">Nashville After Zone Alliance</h5>
+              <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Web</p>
+            </div>
+            <div class="ar-2-1">
+              <div class="carousel-overlay-black z-index-1"></div>
+              <div class="carousel slide" data-interval="1500">
+
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img class="d-block w-100" src="assets/new_images/portfolioimg/naza/logo.jpg" alt="First slide">
+                  </div>
+                  <div class="item">
+                    <img class="d-block w-100" src="assets/new_images/portfolioimg/naza/desktop.jpg" alt="Third slide">
+                  </div>
+                </div>
+              </div>
+              <!--<div data-pages-bg-image="assets/new_images/portfolioimg/naza/logo.png" data-bg-overlay="black" data-overlay-opacity="0.6">
+              </div>-->
+            </div>
+            </a>
+          </div>
+
+
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="http://www.janash.com/">
+            <div class="inner bottom-left bottom-right padding-30 z-index-2">
+              <h5 class="block-title text-white no-margin">Junior Achievement</h5>
+              <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Web</p>
+            </div>
+            <div class="ar-2-1">
+              <div class="carousel-overlay-black z-index-1"></div>
+              <div class="carousel slide" data-interval="1500">
+
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img class="d-block w-100" src="assets/new_images/portfolioimg/Janash/logo.jpg" alt="First slide">
+                  </div>
+                  <div class="item">
+                    <img class="d-block w-100" src="assets/new_images/portfolioimg/Janash/desktop.jpg" alt="Third slide">
+                  </div>
+                </div>
+              </div>
+              <!--<div data-pages-bg-image="assets/new_images/portfolioimg/Janash/logo.jpg" data-bg-overlay="black" data-overlay-opacity="0.6">
+              </div>-->
+            </div>
+            </a>
+          </div>
+
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="http://www.kermitchair.com">
+              <div class="inner bottom-left bottom-right padding-30 z-index-2">
+                <h5 class="block-title text-white no-margin">Kermit Chair</h5>
+                <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Web</p>
+              </div>
+              <div class="ar-2-1">
+                <div class="carousel-overlay-black z-index-1"></div>
+                <div class="carousel slide" data-interval="1500">
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/Kermit_chair/logo.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/Kermit_chair/desktop.jpg" alt="Third slide">
+                    </div>
+                  </div>
+                </div>
+                <!--<div data-pages-bg-image="assets/new_images/portfolioimg/Kermit_chair/logo.jpg" data-bg-overlay="black" data-overlay-opacity="0.6">
+                </div>-->
+              </div>
+            </a>
+          </div>
+
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="https://itunes.apple.com/app/id667637216?mt=8">
+              <div class="inner bottom-left bottom-right padding-30 z-index-2">
+                <h5 class="block-title text-white no-margin">Namesake</h5>
+                <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Mobile</p>
+              </div>
+              <div class="ar-2-1">
+                <!--<div data-pages-bg-image="assets/new_images/portfolioimg/namesake/logo.jpg" data-bg-overlay="black" data-overlay-opacity="0.6">
+                </div>-->
+                <div class="carousel-overlay-black z-index-1"></div>
+                <div class="carousel slide" data-interval="1500">
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/namesake/logo.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/namesake/namesake.jpeg" alt="Second slide">
+                    </div>
+                    <div class="item">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/namesake/ipad1.jpeg" alt="Third slide">
+                    </div>
+                    <div class="item">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/namesake/ipad2.jpeg" alt="Third slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="http://www.stmaryssewanee.org/">
+              <div class="inner bottom-left bottom-right padding-30 z-index-2">
+                <h5 class="block-title text-white no-margin">St. Mary's Sewanee </h5>
+                <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Web</p>
+              </div>
+              <div class="ar-2-1">
+                <!--<div data-pages-bg-image="assets/new_images/portfolioimg/stmarys/logo.jpg" data-bg-overlay="black" data-overlay-opacity="0.6">
+                </div>-->
+                <div class="carousel-overlay-black z-index-1"></div>
+                <div class="carousel slide" data-interval="1500">
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/stmarys/logo.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/stmarys/desktop.jpg" alt="Second slide">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="https://livelids.com">
+              <div class="inner bottom-left bottom-right padding-30 z-index-2">
+                <h5 class="block-title text-white no-margin">LiveLids</h5>
+                <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Web, Mobile, Desktop</p>
+              </div>
+              <div class="ar-2-1">
+                <div class="carousel-overlay-black z-index-1"></div>
+                <!--<div data-pages-bg-image="assets/new_images/portfolioimg/livelids/logo.jpg" data-bg-overlay="black" data-overlay-opacity="0.6">
+                </div>-->
+                <div class="carousel slide" data-interval="1500">
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/livelids/logo.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/livelids/livelids.com.png" alt="Third slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="https://siloamhealth.org">
+              <div class="inner bottom-left bottom-right padding-30 z-index-2">
+                <h5 class="block-title text-white no-margin">Siloam Health</h5>
+                <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Web</p>
+              </div>
+              <div class="ar-2-1">
+                <div class="carousel-overlay-black z-index-1"></div>
+                <!--<div data-pages-bg-image="assets/new_images/portfolioimg/siloam_health/logo.jpg" data-bg-overlay="black" data-overlay-opacity="0.6">
+                </div>-->
+                <div class="carousel slide" data-interval="1500">
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/siloam_health/logo.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/siloam_health/desktop.jpg" alt="Second slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="http://www.goibsdirect.com">
+              <div class="inner bottom-left bottom-right padding-30 z-index-2">
+                <h5 class="block-title text-white no-margin">IBS Direct</h5>
+                <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Web</p>
+              </div>
+              <div class="ar-2-1">
+                <div class="carousel-overlay-black z-index-1"></div>
+                <!--<div data-pages-bg-image="assets/new_images/portfolioimg/ibsdirect/logo.jpg" data-bg-overlay="black" data-overlay-opacity="0.6">
+                </div>-->
+
+                <div class="carousel slide" data-interval="1500">
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/ibsdirect/logo.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/ibsdirect/tablet.jpg" alt="Second slide">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="https://sotl.com">
+              <div class="inner bottom-left bottom-right padding-30 z-index-2">
+                <h5 class="block-title text-white no-margin">School of the Legends</h5>
+                <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Web, Mobile</p>
+              </div>
+              <div class="ar-2-1">
+                <div class="carousel-overlay-black z-index-1"></div>
+                <!--<div data-pages-bg-image="assets/new_images/portfolioimg/sotl/sotl.png" data-bg-overlay="black" data-overlay-opacity="0.6">
+                </div>-->
+
+                <div class="carousel slide" data-interval="1500">
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/sotl/sotl.jpg" alt="First slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="https://stormmapping.com">
+              <div class="inner bottom-left bottom-right padding-30 z-index-2">
+                <h5 class="block-title text-white no-margin">Storm Mapping</h5>
+                <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Web, Mobile</p>
+              </div>
+              <div class="ar-2-1">
+                <div class="carousel-overlay-black z-index-1"></div>
+                <!--<div data-pages-bg-image="assets/new_images/portfolioimg/stormmapping/logo.jpg" data-bg-overlay="black" data-overlay-opacity="0.6">
+                </div>-->
+
+                <div class="carousel slide" data-interval="1500">
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/stormmapping/logo.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/stormmapping/tablet.jpg" alt="Second slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="https://lovethislifeshop.net">
+              <div class="inner bottom-left bottom-right padding-30 z-index-2">
+                <h5 class="block-title text-white no-margin">Love This Life Shop</h5>
+                <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Web</p>
+              </div>
+              <div class="ar-2-1">
+                <div class="carousel-overlay-black z-index-1"></div>
+                <!--<div data-pages-bg-image="assets/new_images/portfolioimg/love_this_life_shop/logo.jpg" data-bg-overlay="black" data-overlay-opacity="0.6">
+                </div>-->
+
+                <div class="carousel slide" data-interval="1500">
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/love_this_life_shop/logo.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/love_this_life_shop/desktop.jpg" alt="Second slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="https://itunes.apple.com/us/app/grow-proclaim-serve-mobile/id567219181?mt=8">
+              <div class="inner bottom-left bottom-right padding-30 z-index-2">
+                <h5 class="block-title text-white no-margin">Grow, Proclaim, Serve! </h5>
+                <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Mobile Game</p>
+              </div>
+              <div class="ar-2-1">
+                <div class="carousel-overlay-black z-index-1"></div>
+                <!--<div data-pages-bg-image="assets/new_images/portfolioimg/Grow_proclaim_serve/logo.jpg" data-bg-overlay="black" data-overlay-opacity="0.6">
+                </div>-->
+                <div class="carousel slide" data-interval="1500">
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/Grow_proclaim_serve/logo.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/Grow_proclaim_serve/tablet.jpg" alt="Third slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="http://duncansecuritysystems.com/">
+              <div class="inner bottom-left bottom-right padding-30 z-index-2">
+                <h5 class="block-title text-white no-margin">Duncan Security Systems </h5>
+                <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Web</p>
+              </div>
+              <div class="ar-2-1">
+                <div class="carousel-overlay-black z-index-1"></div>
+                <!--<div data-pages-bg-image="assets/new_images/portfolioimg/Duncan_Security_Systems/logo.jpg" data-bg-overlay="black" data-overlay-opacity="0.6">
+                </div>-->
+
+                <div class="carousel slide" data-interval="1500">
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/Duncan_Security_Systems/logo.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/Duncan_Security_Systems/tablet.jpg" alt="Second slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="http://tnoncology.com">
+              <div class="inner bottom-left bottom-right padding-30 z-index-2">
+                <h5 class="block-title text-white no-margin">TN Oncology </h5>
+                <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Web</p>
+              </div>
+              <div class="ar-2-1">
+                <div class="carousel-overlay-black z-index-1"></div>
+                <!--<div data-pages-bg-image="assets/new_images/portfolioimg/tnoncology/logo.jpg" data-bg-overlay="black" data-overlay-opacity="0.6">
+                </div>-->
+
+                <div class="carousel slide" data-interval="1500">
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/tnoncology/logo.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/tnoncology/tablet.png" alt="Second slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="http://www.cutabovelawnbg.com ">
+              <div class="inner bottom-left bottom-right padding-30 z-index-2">
+                <h5 class="block-title text-white no-margin">A Cut Above Lawn Care </h5>
+                <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Web</p>
+              </div>
+              <div class="ar-2-1">
+                <div class="carousel-overlay-black z-index-1"></div>
+                <!--<div data-pages-bg-image="assets/new_images/portfolioimg/acutabovelawncare/logo.jpg" data-bg-overlay="black" data-overlay-opacity="0.6">
+                </div>-->
+
+                <div class="carousel slide" data-interval="1500">
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/acutabovelawncare/logo.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/acutabovelawncare/tablet.jpg" alt="Second slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="http://www.eventlogistics.com/">
+              <div class="inner bottom-left bottom-right padding-30 z-index-2">
+                <h5 class="block-title text-white no-margin">Event Logistics </h5>
+                <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Web</p>
+              </div>
+              <div class="ar-2-1">
+                <div class="carousel-overlay-black z-index-1"></div>
+                <!--<div data-pages-bg-image="assets/new_images/portfolioimg/Event_Logistics/logo.jpg" data-bg-overlay="black" data-overlay-opacity="0.6">
+                </div>-->
+
+                <div class="carousel slide" data-interval="1500">
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/Event_Logistics/logo.jpg" alt="First slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="https://www.deepbluekids.com/app.html">
+              <div class="inner bottom-left bottom-right padding-30 z-index-2">
+                <h5 class="block-title text-white no-margin">Deep Blue Adventures </h5>
+                <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Mobile Game</p>
+              </div>
+              <div class="ar-2-1">
+                <div class="carousel-overlay-black z-index-1"></div>
+                <!--<div data-pages-bg-image="assets/new_images/portfolioimg/Deepblueadventures/logo.png" data-bg-overlay="black" data-overlay-opacity="0.6">
+                </div>-->
+
+                <div class="carousel slide" data-interval="1500">
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/Deepblueadventures/logo.png" alt="First slide">
+                    </div>
+                    <div class="item">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/Deepblueadventures/tablet.jpg" alt="Second slide">
+                    </div>
+                    <div class="item">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/Deepblueadventures/desktop.jpg" alt="Third slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="http://tnconservationvoters.org">
+              <div class="inner bottom-left bottom-right padding-30 z-index-2">
+                <h5 class="block-title text-white no-margin">TN Conservation Voters </h5>
+                <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Web</p>
+              </div>
+              <div class="ar-2-1">
+                <div class="carousel-overlay-black z-index-1"></div>
+                <!--<div data-pages-bg-image="assets/new_images/portfolioimg/Tn_Conservation_Voters/logo.png" data-bg-overlay="black" data-overlay-opacity="0.6">
+                </div>-->
+
+                <div class="carousel slide" data-interval="1500">
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/Tn_Conservation_Voters/logo.png" alt="First slide">
+                    </div>
+                    <div class="item">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/Tn_Conservation_Voters/desktop.jpg" alt="Second slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="gallery-item col-sm-6 col-xs-12 no-padding hover-zoom">
+            <a href="https://nashvilleinharmony.org">
+              <div class="inner bottom-left bottom-right padding-30 z-index-2">
+                <h5 class="block-title text-white no-margin">Nashville in Harmony </h5>
+                <p class="font-arial fs-14 text-white muted m-t-5 m-b-0">Web</p>
+              </div>
+              <div class="ar-2-1">
+                <div class="carousel-overlay-black z-index-1"></div>
+                <!--<div data-pages-bg-image="assets/new_images/portfolioimg/nashvilleinharmony/logo.png" data-bg-overlay="black" data-overlay-opacity="0.6">
+                </div>-->
+
+                <div class="carousel slide" data-interval="1500">
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/nashvilleinharmony/logo.png" alt="First slide">
+                    </div>
+                    <div class="item">
+                      <img class="d-block w-100" src="assets/new_images/portfolioimg/nashvilleinharmony/tablet.jpg" alt="Second slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
       </section>
       <!-- END PORTFOLIO SECTION -->
       <!-- BEGIN CONTENT SECTION -->
       <section class="p-b-70 p-t-40">
         <div class="container">
-          <h5 class="block-title hint-text no-margin">Explore</h5>
+          <h5 class="block-title hint-text no-margin">Committed to Giving Back</h5>
           <h5>
-            Our long standing vision has been to bypass the usual admin dashboard structure, and move forward with a more
-            sophisticated yet simple framework that would create a credible impact on the many conventional dashboard users.</h5>
+            Need a website or app for your 501(c) organization?
+            <a href="contact.html">Let us know</a> for discounted and pro-bono services.
+          </h5>
         </div>
       </section>
+
       <!-- END CONTENT SECTION -->
-      <section class="p-b-70 p-t-70 demo-hero-5" data-pages-bg-image="assets/images/gallery_hero_2.jpg">
-      </section>
+      <!-- <section class="p-b-70 p-t-70 demo-hero-5" data-pages-bg-image="assets/images/gallery_hero_2.jpg">
+      </section> -->
       <!-- BEGIN CONTENT SECTION -->
-      <section class="bg-master-lightest p-b-85 p-t-75">
-        <div class="container">
-          <div class="md-p-l-20 md-p-r-20 xs-no-padding">
-            <h5 class="block-title hint-text no-margin">Explore</h5>
-            <div class="row">
-              <div class="col-sm-5 col-md-4">
-                <h1 class="m-t-5">Trusted <br>all around the World.</h1>
-              </div>
-              <div class="col-sm-7 col-md-8 no-padding xs-p-l-15 xs-p-r-15">
-                <img src="assets/images/logo_set.png" alt="">
-              </div>
-            </div>
-          </div>
+      <section class="bg-master-dark p-b-85 p-t-75">
+        <div class="container text-center">
+          <h2 class="light text-white">
+            Want to see your idea take flight?
+          </h2>
+          <a class="btn btn-bordered m-t-15" href="contact.html">CONTACT US</a>
+          <a class="btn btn-bordered m-t-15" href="info.html">REQUEST INFO</a>
+
+          <!-- <h2 class="light text-white">or <a href="info.html">request more info</a>.</h2> -->
         </div>
       </section>
     </section>
@@ -228,19 +752,19 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <img src="assets/images/logo_black.png" width="152" height="21" data-src-retina="assets/images/logo_black_2x.png" class="logo inline m-r-50" alt="">
+            <!-- <img src="assets/new_images/logo-name.png" width="152" height="27" data-src-retina="assets/images/logo_black_2x.png" class="logo inline m-r-50" alt=""> -->
             <div class="m-t-10 ">
               <ul class="no-style fs-11 no-padding font-arial">
-                <li class="inline no-padding"><a href="index.html" class=" text-master p-r-10 b-r b-grey">Home</a></li>
-                <li class="inline no-padding"><a href="portfolio.html" class="hint-text text-master p-l-10 p-r-10 b-r b-grey">Portfolio</a></li>
+                <li class="inline no-padding"><a href="index.html" class=" hint-text text-master p-r-10 b-r b-grey">Home</a></li>
+                <li class="inline no-padding"><a href="portfolio.html" class="text-master p-l-10 p-r-10 b-r b-grey">Portfolio</a></li>
                 <!-- <li class="inline no-padding"><a href="#" class="hint-text text-master p-l-10 p-r-10 b-r b-grey">Contact Us</a></li> -->
-                <li class="inline no-padding"><a href="mailto:contact@fledgerlabs.io" class="hint-text text-master p-l-10 p-r-10 xs-no-padding xs-m-t-10">Contact Us</a></li>
+                <li class="inline no-padding"><a href="contact.html" class="hint-text text-master p-l-10 p-r-10">Contact Us</a></li>
               </ul>
             </div>
           </div>
           <div class="col-sm-6 text-right font-arial sm-text-left">
             </p>
-            <p class="fs-11 muted">Copyright &copy; 2017 Fledger Labs, LLC. All Rights Reserved.</p>
+            <p class="fs-11 muted">&copy; 2017 Fledger Labs, LLC. All Rights Reserved.</p>
           </div>
         </div>
       </div>
@@ -251,7 +775,7 @@
     <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="pages/js/pages.image.loader.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.js"></script>
     <!-- BEGIN SWIPER DEPENDENCIES -->
     <script type="text/javascript" src="assets/plugins/swiper/js/swiper.jquery.min.js"></script>
     <!-- Waits for the images to be loaded before applying the Isotope plugin -->
@@ -262,10 +786,25 @@
     <script type="text/javascript" src="assets/plugins/jquery-unveil/jquery.unveil.min.js"></script>
     <!-- END VENDOR JS -->
     <!-- BEGIN PAGES FRONTEND LIB -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <script type="text/javascript" src="pages/js/pages.frontend.js"></script>
     <!-- END PAGES LIB -->
     <!-- BEGIN YOUR CUSTOM JS -->
-    <script src="assets/js/custom.js" type="text/javascript"></script>
+
+
+     <script src="assets/js/custom.js" type="text/javascript"></script>
     <script src="assets/js/gallery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5a029087bb0c3f433d4c7d30/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
   </body>
 </html>

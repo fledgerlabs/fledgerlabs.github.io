@@ -46,3 +46,153 @@ $(document).ready(function() {
         }
     });
 });
+$(document).ready(function(){
+
+
+
+    $('.carousel-overlay-black').on('mouseenter',function(){
+        $(this).next().carousel('next');
+        $(this).next().carousel('cycle');
+    }).on('mouseleave', function() {
+        $(this).next().carousel(0);
+        $(this).next().carousel('pause');
+
+    });
+
+    var $window = $(window);
+    function checkWidth() {
+        var windowsize = $window.width();
+        if (windowsize <=767) {
+            $('.carousel').addClass('carousel-autoscroll');
+        }
+        else {
+            if ($('.carousel').hasClass('carousel-autoscroll'))
+                $('.carousel').removeClass('carousel-autoscroll');
+        }
+    }
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+
+    $(window).resize(checkWidth);
+
+/*
+    $('.carousel-autoscroll').waypoint(function(direction){
+            //if(direction == 'up'){
+            $(this.element).carousel('next');
+            $(this.element).carousel('cycle');
+            var prev = this.previous();
+            var next = this.next();
+            if(prev) {
+                $(prev.element).carousel(0);
+                $(prev.element).carousel('pause');
+            }
+            if(next) {
+                $(next.element).carousel(0);
+                $(next.element).carousel('pause');
+            }
+            //console.log($(this));
+            // alert();
+        }, {
+            offset: 300
+        }
+    );
+*/
+    $('.carousel-autoscroll').waypoint(function(direction){
+            if(direction == 'up'){
+                $(this.element).carousel('next');
+                $(this.element).carousel('cycle');
+                /*var prev = this.previous();
+                var next = this.next();
+                if(prev) {
+                    $(prev.element).carousel(0);
+                    $(prev.element).carousel('pause');
+                }
+                if(next) {
+                    $(next.element).carousel(0);
+                    $(next.element).carousel('pause');
+                }
+                */
+
+                //console.log('22 play');
+                //console.log(210 - $('.carousel-autoscroll').height());
+                //alert();
+            }
+            else if ( direction == 'down'){
+                $(this.element).carousel(0);
+                $(this.element).carousel('pause');
+
+                //  console.log('22 pause');
+            }
+
+        }, {
+            offset: 200 - $('.carousel-autoscroll').height()
+        }
+    );
+    $('.carousel-autoscroll').waypoint(function(direction){
+
+            if(direction == 'down'){
+                $(this.element).carousel('next');
+                $(this.element).carousel('cycle');
+                /*var prev = this.previous();
+                var next = this.next();
+                if(prev) {
+                    $(prev.element).carousel(0);
+                    $(prev.element).carousel('pause');
+                }
+                if(next) {
+                    $(next.element).carousel(0);
+                    $(next.element).carousel('pause');
+                }
+                */
+                //console.log('200 play');
+                //alert();
+            }
+            else if ( direction == 'up'){
+                $(this.element).carousel(0);
+
+                $(this.element).carousel('pause');
+                //console.log(' 200 pause');
+            }
+        }, {
+            offset: 150
+        }
+    );
+    $(window).scroll(function(){
+        console.log($(window).scrollTop());
+    });
+
+
+
+
+});
+
+
+
+/*
+    $(window).scroll(function() {
+        try {
+            $('.carousel-autoscroll').each(function() {
+                var posfromtop = $(this).offset().top;
+                var currentscrollpos = $(window).scrollTop();
+                var distancefromtop = posfromtop - currentscrollpos;
+
+                if (distancefromtop <= 300 && distancefromtop >=100){
+                    $(this).carousel('next');
+                    $(this).carousel('cycle');
+                    console.log('running')
+                }
+                else{
+                    $(this).carousel(0);
+                    $(this).carousel('pause');
+
+                    console.log('paused')
+                }
+                console.log(distancefromtop);
+            });
+        }
+        catch (e){
+            console.log(e);
+        }
+    });
+    */

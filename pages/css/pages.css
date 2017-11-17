@@ -6703,7 +6703,7 @@ input.error:-webkit-autofill:focus,
   width: 100%;
 }
 .full-vh {
-  height: 100vh;
+  height: 100%;
 }
 .hide {
   display: none;
@@ -8732,4 +8732,6 @@ sup.dollar {
     width: auto;
   }
 }
+
+
 /*** Retina Display Images **/
